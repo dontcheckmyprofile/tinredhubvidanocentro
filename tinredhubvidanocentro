@@ -26,6 +26,13 @@ Tab:AddButton({
       end    
 })
 
+Tab:AddButton({
+    Name = "Destructed Hex",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/dontcheckmyprofile/DestructedHex/refs/heads/main/DestructedHex",true))();
+      end    
+})
+
 OrionLib:MakeNotification({
     Name = "Bem Vindo!",
     Content = "Opa, Esse Hub Foi Feito Pelo Tinred Scripts, Não pelo fragiotatx KKKKKKKK",
