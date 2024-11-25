@@ -1,0 +1,34 @@
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/dycazk6Z')))()
+
+local Window = OrionLib:MakeWindow({Name = "Tinred Hub - Vida No Centro", HidePremium = false, SaveConfig = true, ConfigFolder = "HackDoGui"})
+
+local Tab = Window:MakeTab({
+    Name = "Melhores Hubs Do Vida No Centro",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "Melhores Hubs Do Vida No Centro"
+})
+
+Tab:AddButton({
+    Name = "Comet",
+    Callback = function()
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/FE/main/Comet'))()
+      end    
+})
+
+Tab:AddButton({
+    Name = "Harked Reborn (Refeito) V2",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/dontcheckmyprofile/HarkedRebornV2/refs/heads/main/HarkedRebornV2",true))();
+      end    
+})
+
+OrionLib:MakeNotification({
+    Name = "Bem Vindo!",
+    Content = "Opa, Esse Hub Foi Feito Pelo Tinred Scripts, Não pelo fragiotatx KKKKKKKK",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
